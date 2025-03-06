@@ -47,11 +47,11 @@
                 {
                     Console.WriteLine("Quantos produtos você deseja adicionar?");
                     int numProd = int.Parse(Console.ReadLine());
+                    Pedido pedido = new Pedido();
                     for (int i = 0; i < numProd; i++)
                     {
 
                         Console.WriteLine($"0 - Hamburguer, 1 - Batata, 2 - Bebidas, 3 - HotDog, 4 - {novoProduto.NomeProduto}");
-                        Pedido pedido = new Pedido();
                         Console.WriteLine("Qual Produto você deseja adicionar");
 
                         int ql = int.Parse(Console.ReadLine());
